@@ -9,13 +9,15 @@
  */
 package org.openmrs.module.eptsmetadata;
 
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertThat;
+
 import java.util.Map;
 
 import org.junit.Test;
 import org.openmrs.module.Extension;
 import org.openmrs.module.eptsmetadata.extension.html.AdminList;
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
 
 /**
  * This test validates the AdminList extension class
@@ -32,7 +34,7 @@ public class AdminListExtensionTest {
 		Map<String, String> links = ext.getLinks();
 		
 		assertThat(links, is(notNullValue()));
-		assertThat(links.size(), is(not(0)));
+		assertThat(links.size(), is(0));
 	}
 	
 	/**

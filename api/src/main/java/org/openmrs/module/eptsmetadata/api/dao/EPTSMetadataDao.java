@@ -9,29 +9,15 @@
  */
 package org.openmrs.module.eptsmetadata.api.dao;
 
-import org.hibernate.criterion.Restrictions;
+import org.openmrs.api.context.Context;
 import org.openmrs.api.db.hibernate.DbSession;
 import org.openmrs.api.db.hibernate.DbSessionFactory;
-import org.openmrs.module.eptsmetadata.Item;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository("eptsmetadata.EPTSMetadataDao")
 public class EPTSMetadataDao {
 	
-	@Autowired
-	DbSessionFactory sessionFactory;
-	
 	private DbSession getSession() {
-		return sessionFactory.getCurrentSession();
-	}
-	
-	public Item getItemByUuid(String uuid) {
-		return (Item) getSession().createCriteria(Item.class).add(Restrictions.eq("uuid", uuid)).uniqueResult();
-	}
-	
-	public Item saveItem(Item item) {
-		getSession().saveOrUpdate(item);
-		return item;
+		return Context.getRegisteredComponents(DbSessionFactory.class).get(0).getCurrentSession();
 	}
 }

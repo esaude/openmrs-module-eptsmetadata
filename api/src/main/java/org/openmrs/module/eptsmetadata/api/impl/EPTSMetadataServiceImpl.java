@@ -9,10 +9,7 @@
  */
 package org.openmrs.module.eptsmetadata.api.impl;
 
-import org.openmrs.api.APIException;
-import org.openmrs.api.UserService;
 import org.openmrs.api.impl.BaseOpenmrsService;
-import org.openmrs.module.eptsmetadata.Item;
 import org.openmrs.module.eptsmetadata.api.EPTSMetadataService;
 import org.openmrs.module.eptsmetadata.api.dao.EPTSMetadataDao;
 
@@ -20,33 +17,10 @@ public class EPTSMetadataServiceImpl extends BaseOpenmrsService implements EPTSM
 	
 	EPTSMetadataDao dao;
 	
-	UserService userService;
-	
 	/**
 	 * Injected in moduleApplicationContext.xml
 	 */
 	public void setDao(EPTSMetadataDao dao) {
 		this.dao = dao;
-	}
-	
-	/**
-	 * Injected in moduleApplicationContext.xml
-	 */
-	public void setUserService(UserService userService) {
-		this.userService = userService;
-	}
-	
-	@Override
-	public Item getItemByUuid(String uuid) throws APIException {
-		return dao.getItemByUuid(uuid);
-	}
-	
-	@Override
-	public Item saveItem(Item item) throws APIException {
-		if (item.getOwner() == null) {
-			item.setOwner(userService.getUser(1));
-		}
-		
-		return dao.saveItem(item);
 	}
 }
