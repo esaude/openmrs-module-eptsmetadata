@@ -11,4 +11,19 @@
 	<packaging>jar</packaging>
 	<name>EPTS Metadata API</name>
 	<description>API project for EPTS Metadata</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatadeploy-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatadeploy-api-1.10</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>metadatasharing-api</artifactId>
+	    </dependency>
+	</dependencies>
 </project>

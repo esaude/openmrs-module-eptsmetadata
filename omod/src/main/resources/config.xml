@@ -16,6 +16,11 @@
 	
 	<require_version>${openmrsPlatformVersion}</require_version>
 	
+	<require_modules>
+		<require_module>org.openmrs.module.metadatadeploy</require_module>
+		<require_module>org.openmrs.module.metadatasharing</require_module>
+	</require_modules>
+	
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
