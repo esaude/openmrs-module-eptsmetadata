@@ -1,9 +1,9 @@
 EPTS Metadata Module
 ==========================
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6cb836f28bd141a3a4f8fe388f1d8c3d)](https://app.codacy.com/app/esaude-ops/openmrs-module-eptsmetadata?utm_source=github.com&utm_medium=referral&utm_content=esaude/openmrs-module-eptsmetadata&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.org/esaude/openmrs-module-eptsmetadata.svg?branch=master)](https://travis-ci.org/esaude/openmrs-module-eptsmetadata)
 [![Coverage Status](https://coveralls.io/repos/github/esaude/openmrs-module-eptsmetadata/badge.svg?branch=master)](https://coveralls.io/github/esaude/openmrs-module-eptsmetadata?branch=master)
-
 
 Description
 -----------
