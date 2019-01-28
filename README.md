@@ -1,6 +1,10 @@
 EPTS Metadata Module
 ==========================
 
+[![Build Status](https://travis-ci.org/esaude/openmrs-module-eptsmetadata.svg?branch=master)](https://travis-ci.org/esaude/openmrs-module-eptsmetadata)
+[![Coverage Status](https://coveralls.io/repos/github/esaude/openmrs-module-eptsmetadata/badge.svg?branch=master)](https://coveralls.io/github/esaude/openmrs-module-eptsmetadata?branch=master)
+
+
 Description
 -----------
 Electronic Patient Tracking System (EPTS) metadata pack OpenMRS module

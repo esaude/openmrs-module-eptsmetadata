@@ -80,4 +80,45 @@
         <metadatadeployVersion>1.11.0</metadatadeployVersion>
         <metadatasharingVersion>1.5.0</metadatasharingVersion>
     </properties>
+    
+    <build>
+    	<pluginManagement>
+			<plugins>
+    			<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.8.2</version>
+					<configuration>
+						<includes>
+							<include>org/openmrs/**</include>
+						</includes>
+					</configuration>
+					<executions>
+						<execution>
+							<id>prepare-agent</id>
+							<goals>
+								<goal>prepare-agent</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.eluder.coveralls</groupId>
+					<artifactId>coveralls-maven-plugin</artifactId>
+					<version>4.3.0</version>
+					<configuration>
+        				<repoToken></repoToken>
+    				</configuration>
+				</plugin>
+				<plugin>
+				    <groupId>org.apache.maven.plugins</groupId>
+				    <artifactId>maven-surefire-plugin</artifactId>
+				    <version>2.22.1</version>
+				    <configuration>
+				    	<argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+				    </configuration>
+				</plugin>
+			</plugins>	
+		</pluginManagement>
+    </build>
 </project>
