@@ -48,6 +48,11 @@
 				<version>${metadatasharingVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+  				<groupId>com.google.googlejavaformat</groupId>
+  				<artifactId>google-java-format</artifactId>
+  				<version>1.6</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -117,6 +122,15 @@
 				    <configuration>
 				    	<argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 				    </configuration>
+				</plugin>
+				<plugin>
+					<groupId>com.googlecode.maven-java-formatter-plugin</groupId>
+					<artifactId>maven-java-formatter-plugin</artifactId>
+					<configuration combine.self="override">
+						<configFile></configFile>
+						<overrideConfigCompilerVersion>true</overrideConfigCompilerVersion>
+						<lineEnding>LF</lineEnding>
+					</configuration>
 				</plugin>
 			</plugins>	
 		</pluginManagement>
