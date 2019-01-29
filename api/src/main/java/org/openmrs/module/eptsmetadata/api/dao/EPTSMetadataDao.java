@@ -16,8 +16,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository("eptsmetadata.EPTSMetadataDao")
 public class EPTSMetadataDao {
-	
+
 	private DbSession getSession() {
-		return Context.getRegisteredComponents(DbSessionFactory.class).get(0).getCurrentSession();
+		return Context.getRegisteredComponents(DbSessionFactory.class).get(0)
+				.getCurrentSession();
 	}
 }
