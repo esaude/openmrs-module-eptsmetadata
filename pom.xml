@@ -16,7 +16,7 @@
 	<description>Electronic Patient Tracking System (EPTS) metadata pack</description>
 
 	<properties>
-        <openmrsPlatformVersion>1.11.6</openmrsPlatformVersion>
+        <openmrsPlatformVersion>1.11.5</openmrsPlatformVersion>
         <metadatadeployVersion>1.11.0</metadatadeployVersion>
         <metadatasharingVersion>1.5.0</metadatasharingVersion>
     </properties>
