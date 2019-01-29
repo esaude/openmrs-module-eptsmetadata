@@ -15,6 +15,12 @@
 	<name>EPTS Metadata</name>
 	<description>Electronic Patient Tracking System (EPTS) metadata pack</description>
 
+	<properties>
+        <openmrsPlatformVersion>1.11.6</openmrsPlatformVersion>
+        <metadatadeployVersion>1.11.0</metadatadeployVersion>
+        <metadatasharingVersion>1.5.0</metadatasharingVersion>
+    </properties>
+    
 	<url>https://wiki.openmrs.org/x/FQ4z</url>
 
 	<scm>
@@ -75,12 +81,6 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-    <properties>
-        <openmrsPlatformVersion>1.11.6</openmrsPlatformVersion>
-        <metadatadeployVersion>1.11.0</metadatadeployVersion>
-        <metadatasharingVersion>1.5.0</metadatasharingVersion>
-    </properties>
-    
     <build>
     	<pluginManagement>
 			<plugins>
