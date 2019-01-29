@@ -42,7 +42,7 @@ into the ~/.OpenMRS/modules folder.  (Where ~/.OpenMRS is assumed to be the Appl
 Data Directory that the running openmrs is currently using.)  After putting the file in there
 simply restart OpenMRS/tomcat and the module will be loaded and started.
 
-Reports Implemented
+Metadata Implemented
 -------------------
 
 How to perform a release
