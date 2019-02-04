@@ -16,12 +16,11 @@ import org.openmrs.module.eptsmetadata.api.EPTSMetadataService;
 import org.openmrs.test.BaseModuleContextSensitiveTest;
 
 /**
- * This is a unit test, which verifies logic in EPTSMetadataService. It doesn't
- * extend BaseModuleContextSensitiveTest, thus it is run without the in-memory
- * DB and Spring context.
+ * This is a unit test, which verifies logic in EPTSMetadataService. It doesn't extend
+ * BaseModuleContextSensitiveTest, thus it is run without the in-memory DB and Spring context.
  */
 public class EPTSMetadataServiceTest extends BaseModuleContextSensitiveTest {
-
+	
 	@Test
 	public void setupMocks() {
 		Assert.assertNotNull(Context.getService(EPTSMetadataService.class));

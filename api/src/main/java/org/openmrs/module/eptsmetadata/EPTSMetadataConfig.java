@@ -16,6 +16,6 @@ import org.springframework.stereotype.Component;
  */
 @Component("eptsmetadata.EPTSMetadataConfig")
 public class EPTSMetadataConfig {
-
+	
 	public final static String MODULE_PRIVILEGE = "EPTS Metadata Privilege";
 }

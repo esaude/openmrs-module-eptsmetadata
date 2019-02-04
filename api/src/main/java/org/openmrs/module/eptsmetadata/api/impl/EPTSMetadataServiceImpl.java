@@ -13,12 +13,10 @@ import org.openmrs.api.impl.BaseOpenmrsService;
 import org.openmrs.module.eptsmetadata.api.EPTSMetadataService;
 import org.openmrs.module.eptsmetadata.api.dao.EPTSMetadataDao;
 
-public class EPTSMetadataServiceImpl extends BaseOpenmrsService
-		implements
-			EPTSMetadataService {
-
+public class EPTSMetadataServiceImpl extends BaseOpenmrsService implements EPTSMetadataService {
+	
 	EPTSMetadataDao dao;
-
+	
 	/**
 	 * Injected in moduleApplicationContext.xml
 	 */

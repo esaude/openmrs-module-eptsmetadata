@@ -16,5 +16,5 @@ import org.openmrs.api.OpenmrsService;
  * moduleApplicationContext.xml on how it is wired up.
  */
 public interface EPTSMetadataService extends OpenmrsService {
-
+	
 }
